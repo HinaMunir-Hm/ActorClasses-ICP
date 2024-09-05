@@ -1,0 +1,26 @@
+{
+  "canisters": {
+    "community-app-backend": {
+      "main": "src/community-app-backend/main.mo",
+      "type": "motoko"
+    },
+    "community-app-frontend": {
+      "dependencies": [
+        "community-app-backend"
+      ],
+      "source": [
+        "src/community-app-frontend/dist"
+      ],
+      "type": "assets",
+      "workspace": "community-app-frontend"
+    }
+  },
+  "defaults": {
+    "build": {
+      "args": "",
+      "packtool": ""
+    }
+  },
+  "output_env_file": ".env",
+  "version": 1
+}
